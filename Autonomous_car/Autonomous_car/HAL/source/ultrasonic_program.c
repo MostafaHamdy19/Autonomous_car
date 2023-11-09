@@ -27,8 +27,8 @@ extern volatile   u16 OvfCounter;
 
 void ultrasonic_init(void)
 {
-	DIO_setPinDirection(ECHO_PORT,ECHO_PIN,DIO_PIN_INPUT);      // trigger 
-	DIO_setPinDirection(TRIGGER_PORT,DIO_PIN0,DIO_PIN_OUTPUT);  // echo
+	DIO_setPinDirection(ECHO_PORT,ECHO_PIN,DIO_PIN_INPUT);      //  echo
+	DIO_setPinDirection(TRIGGER_PORT,DIO_PIN0,DIO_PIN_OUTPUT);  //  trigger
 	EXTI_setCallBack(&EXTI_action);                             // external interrupt call back 
 }
 
